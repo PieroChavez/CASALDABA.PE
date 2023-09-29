@@ -1,0 +1,99 @@
+.cover {
+    background-image: url('https://media.swncdn.com/via/17596-istockgetty-images-plusyakubovalim.jpg'); /* Ruta a tu imagen de portada */
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+
+.cover-content {
+    background-color: rgba(36, 50, 56, 0.7); /* Color de fondo con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cover h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cover p {
+    font-size: 18px;
+}
+
+
+
+
+/* Estilos para el Catálogo de Productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(15% - 10px); /* Un cuarto del ancho con margen entre elementos */
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    height: 30px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.rating {
+    /* Agrega estilos para las estrellas (puedes usar íconos de estrellas) */
+}
+
+.add-to-cart {
+    background-color: #D38366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #922F16;
+}
+
+
+/* Media query para hacer que los elementos sean responsivos */
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px); /* Mitad del ancho con margen entre elementos */
+        margin: 10px; /* Espacio reducido entre elementos */
+    }
+
+    /* Puedes realizar más ajustes de estilo aquí para tamaños de pantalla más pequeños */
+}

@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* Encabezado */
+.header {
+    background-color: #ffffff;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #D38366;
+    border-radius: 10px;
+    color: #922F16;
+    text-align: center;
+    margin-right: calc(-9px/2);
+    margin-left: calc(-9px/2);
+}
+
+
+/* Pie de Página */
+.footer {
+    background-color: #922F16;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: white;
+}
+
+
+
+
+
+/* Estilos para el Botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-button a {
+    background-color: #25d366;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    position: relative;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+    margin-right: 0px;
+    transition: margin-right 0.3s ease;
+}
+
+/* Estilos para el Globo de Mensaje */
+.message {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar el mensaje cuando pasas el cursor sobre el botón */
+.whatsapp-button a:hover .message {
+    opacity: 1;
+}
